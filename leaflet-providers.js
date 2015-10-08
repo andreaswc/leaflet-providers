@@ -104,6 +104,7 @@
 					'&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 			},
 			variants: {
+				basicMap: {},
 				Mapnik: {},
 				BlackAndWhite: {
 					url: 'http://{s}.tiles.wmflabs.org/bw-mapnik/{z}/{x}/{y}.png',
@@ -452,47 +453,24 @@
 				normalNightGrey: 'normal.night.grey',
 				normalNightGreyMobile: 'normal.night.grey.mobile',
 
-				baseTile: {
-				  options: {
-					type: 'basetile'
-				  }
+				basicMap: {
+					options: {
+						type: 'basetile'
+					}
 				},
-				lineTile: {
-				  options: {
-					type: 'linetile'
-				  }
+				mapLabels: {
+					options: {
+						type: 'labeltile',
+						format: 'png'
+					}
 				},
-				labelTile: {
-				  options: {
-					type: 'labeltile',
-					format: 'png'
-				  }
+				trafficFlow: {
+					options: {
+						base: 'traffic',
+						type: 'flowtile'
+					}
 				},
-				trafficTile: {
-				  options: {
-					base: 'traffic',
-					type: 'traffictile'
-				  }
-				},
-				flowTile: {
-				  options: {
-					base: 'traffic',
-					type: 'flowtile'
-				  }
-				},
-				flowBaseTile: {
-				  options: {
-					base: 'traffic',
-					type: 'flowbasetile'
-				  }
-				},
-				flowLabelTile: {
-				  options: {
-					base: 'traffic',
-					type: 'flowlabeltile'
-				  }
-				},
-				
+
 				carnavDayGrey: 'carnav.day.grey',
 				hybridDay: {
 					options: {
